@@ -15,7 +15,7 @@ function Header() {
           height='40'
           alt=''
           loading='lazy'
-          width='100%'
+          
         />
         RecipeFusion
 
