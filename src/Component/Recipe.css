@@ -1,0 +1,134 @@
+/* Recipe.css */
+
+.app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  
+  }
+  
+  .search-box {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Center search box contents */
+    gap: 10px; /* Space between input and button */
+  }
+  
+  .search-box input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px; /* Fixed width for larger screens */
+  }
+  
+  .search-box button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .search-box button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space between items */
+  }
+  
+  .recipe-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: calc(33% - 20px); /* Adjust width for responsiveness */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .recipe-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .recipe-card img {
+    max-width: 100%;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  .recipe-card button{
+  color: slateblue;
+  
+     
+  }
+  
+  .recipe-details {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    color: whitesmoke;
+    
+  }
+  
+  .recipe-details ul {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+  }
+  .recipe-details  li{
+    padding: 5px;
+  }
+  
+  .recipe-details h2 {
+    margin-bottom: 10px;
+  }
+  .recipe-card h2{
+      font-size: 20px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+
+    h1{
+        font-size: 20px;
+    }
+    .recipe-card {
+      width: calc(40% - 10px); /* 2 items per row on medium screens */
+    }
+  
+    .search-box {
+      flex-direction: column; /* Stack input and button */
+      align-items: center; /* Center items */
+      
+    }
+  
+    .search-box input {
+      width: 200px; /* Full width for input on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .recipe-card {
+      width: 80%; /* 1 item per row on small screens */
+    }
+    .recipe-card h2 {
+      font-size: 20px;
+    }
+  
+    .search-box input {
+      margin-bottom: 10px; /* Space between input and button */
+    }
+    .recipe-details img {
+        width: 250px;
+    }
+  }
+  
